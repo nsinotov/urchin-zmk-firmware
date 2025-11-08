@@ -59,6 +59,17 @@
 			quick-tap-ms = <250>;
 			bindings = <&kp>, <&kp>;
 		};
+
+		// Layer-tap with quick-tap for key repeat
+		lt_repeat: layer_tap_repeat {
+			compatible = "zmk,behavior-hold-tap";
+			label = "LAYER_TAP_REPEAT";
+			#binding-cells = <2>;
+			flavor = "balanced";
+			tapping-term-ms = <200>;
+			quick-tap-ms = <200>;
+			bindings = <&mo>, <&kp>;
+		};
 	};
 
 	macros {
@@ -95,9 +106,9 @@
 			//├─────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼─────────────────────┤
 			   &hml LSHIFT A         &hml LCTRL S   &hml LALT D    &hml LGUI F    &kp G              &kp H          &hmr RGUI J    &hmr RALT K    &hmr RCTRL L   &hmr RSHIFT SEMI
 			//├─────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼─────────────────────┤
-			   &hyp LC(LS(LA(LGUI))) Z   &kp X      &kp C          &kp V          &kp B              &kp N          &kp M          &kp COMMA      &kp DOT        &hyp LC(LS(LA(LGUI))) FSLH
-			//└─────────────────────┴──────────────┴──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┴──────────────┴─────────────────────┘
-			                                                        &lt NAV TAB    &lt SYM SPACE      &lt FUN RET    &lt NUM BSPC
+		   &hyp LC(LS(LA(LGUI))) Z   &kp X      &kp C          &kp V          &kp B              &kp N          &kp M          &kp COMMA      &kp DOT        &hyp LC(LS(LA(LGUI))) FSLH
+		//└─────────────────────┴──────────────┴──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┴──────────────┴─────────────────────┘
+		                                                        &lt_repeat NAV TAB    &lt_repeat SYM SPACE      &lt_repeat FUN RET    &lt_repeat NUM BSPC
 			//                                                    └──────────────┴──────────────┘   └──────────────┴──────────────┘
 			>;
 		};
@@ -123,7 +134,7 @@
 			label = "Sym";
 			bindings = <
 			//┌────────────────┬──────────────────┬────────────────┬────────────────┬──────────────┐   ┌──────────────┬────────────────┬──────────────────┬──────────────────┬──────────────────┐
-			   &kp EXCL         &kp AT             &kp HASH         &kp DLLR         &kp PRCNT          &kp CARET      &kp AMPS         &kp ASTRK          &kp LPAR           &kp RPAR
+			   &kp EXCL         &kp AT             &kp POUND        &kp DLLR         &kp PRCNT          &kp CARET      &kp AMPS         &kp ASTRK          &kp LPAR           &kp RPAR
 			//├────────────────┼──────────────────┼────────────────┼────────────────┼──────────────┤   ├──────────────┼────────────────┼──────────────────┼──────────────────┼──────────────────┤
 			   &hml LSHIFT DOT  &hml LCTRL COMMA   &hml LALT DQT    &hml LGUI SQT    &kp PIPE           &kp MINUS      &hmr RGUI EQUAL  &hmr RALT GRAVE    &hmr RCTRL LBRC    &hmr RSHIFT RBRC
 			//├────────────────┼──────────────────┼────────────────┼────────────────┼──────────────┤   ├──────────────┼────────────────┼──────────────────┼──────────────────┼──────────────────┤
@@ -155,7 +166,7 @@
 			label = "Fun";
 			bindings = <
 			//┌──────────────┬──────────────┬──────────────┬──────────────┬──────────────┐   ┌──────────────┬──────────────┬──────────────┬──────────────┬──────────────┐
-			   &bt BT_SEL 0   &trans         &kp C_RW       &kp C_FF       &kp C_PP           &bt BT_SEL 3   &trans         &trans         &unstick       &sys_reset
+			   &bt BT_SEL 0   &trans         &kp C_PREV     &kp C_NEXT     &kp C_PP           &bt BT_SEL 3   &trans         &trans         &unstick       &sys_reset
 			//├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
 			   &bt BT_SEL 1   &trans         &kp C_VOL_DN   &kp C_VOL_UP   &kp C_MUTE         &bt BT_SEL 4   &trans         &trans         &trans         &bootloader
 			//├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
