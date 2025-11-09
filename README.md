@@ -201,10 +201,8 @@ Advantages:
 
 ### BUILD INFO
 
-- **Build Date**: November 9, 2025
 - **Keyboard**: Urchin - Split 3x5_2 (34 keys)
-- **Controller**: Nice!Nano v2 (nRF52840)
-- **Firmware**: ZMK (main branch)
-- **Layout Author**: Nikolay
+- **Controller**: Nice!Nano v2
+- **Firmware**: ZMK (v0.3.0)
 - **Original repo**: https://github.com/duckyb/urchin-zmk-firmware
 
