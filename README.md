@@ -24,35 +24,14 @@ This is a fork of https://github.com/duckyb/urchin-zmk-firmware
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │ Z/⇪ │  X  │  C  │  V  │  B  │       │  N  │  M  │  ,  │  .  │ //⇪ │
           └─────┴─────┴─────┼─────┼─────┐       ┌─────┼─────┼─────┴─────┴─────┘
-                            │Tab↓1│Spc↓2│       │Ent↓5│Bsp↓4│
+                            │Tab↓1│Spc↓3│       │Ent↓5│Bsp↓4│
                             └─────┴─────┘       └─────┴─────┘
 
 Legend: ⇧=Shift, ⌃=Control, ⌥=Alt/Option, ⌘=GUI/Command, ⇪=Hyper
         ↓n = Layer tap to layer n
 
 
-#### LAYER 1: NAVIGATION & EDITING
-
-          ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
-          │     │     │     │     │     │       │HOME │PgDn │PgUp │ END │     │
-          ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-          │  ⇧  │  ⌃  │  ⌥  │  ⌘  │     │       │  ←  │  ↓  │  ↑  │  →  │     │
-          ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-          │     │     │ ⌘C  │ ⌘V  │     │       │     │     │     │     │     │
-          └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
-                            │     │     │       │Enter│ Del │
-                            └─────┴─────┘       └─────┴─────┘
-
-Features:
-  - Left hand: Modifier keys (Shift, Ctrl, Alt, GUI)
-  - Right hand: Arrow keys and navigation (Home, End, PgUp, PgDn)
-  - Cmd+C, Cmd+V for copy/paste
-
-
-#### LAYER 2: EMPTY
-*(Workaround for firmware bug - intentionally unused)*
-
-#### LAYER 3: SYMBOLS
+#### LAYER 1: SYMBOLS
 
           ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
           │  !  │  @  │  #  │  $  │  %  │       │  ^  │  &  │  *  │  (  │  )  │
@@ -68,6 +47,27 @@ Features:
   - Top row: Common symbols (!@#$%^&*())
   - Home row: Punctuation and brackets with mod-tap
   - Bottom row: Special characters and quotes
+
+
+#### LAYER 2: EMPTY
+*(Workaround for firmware bug - intentionally unused)*
+
+#### LAYER 3: NAVIGATION & EDITING
+
+          ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
+          │     │     │     │     │     │       │HOME │PgDn │PgUp │ END │     │
+          ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
+          │  ⇧  │  ⌃  │  ⌥  │  ⌘  │     │       │  ←  │  ↓  │  ↑  │  →  │     │
+          ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
+          │     │     │ ⌘C  │ ⌘V  │     │       │     │     │     │     │     │
+          └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
+                            │     │     │       │Enter│ Del │
+                            └─────┴─────┘       └─────┴─────┘
+
+Features:
+  - Left hand: Modifier keys (Shift, Ctrl, Alt, GUI)
+  - Right hand: Arrow keys and navigation (Home, End, PgUp, PgDn)
+  - Cmd+C, Cmd+V for copy/paste
 
 
 #### LAYER 4: NUMBERS & FUNCTION KEYS
@@ -116,7 +116,7 @@ Legend: |<<, >>|, >|| = Media controls, Bri=Brightness, Vol=Volume, BT=Bluetooth
 > [!WARNING]
 > **Known Firmware Bug**: Layer index 2 combined with key position 2 causes keyboard disconnection.
 > This configuration includes an intentionally empty layer at index 2 as a workaround.
-> The symbol layer is at index 3 instead.
+> The navigation layer is at index 3 instead.
 
 ### Key Repeat Feature (lt_repeat)
 
@@ -171,8 +171,8 @@ Timing Configuration (optimized for fast typing):
 ### LAYER ACCESS SUMMARY
 
 From BASE layer:
-  - Hold Tab     → Layer 1 (Navigation)
-  - Hold Space   → Layer 3 (Symbols)
+  - Hold Tab     → Layer 1 (Symbols)
+  - Hold Space   → Layer 3 (Navigation)
   - Hold Enter   → Layer 5 (Media/System)
   - Hold Bksp    → Layer 4 (Numbers/F-keys)
 
