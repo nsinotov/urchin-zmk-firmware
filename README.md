@@ -55,7 +55,7 @@ Features:
 #### LAYER 3: NAVIGATION & EDITING
 
           ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
-          │  🌐 │     │     │     │     │       │HOME │PgDn │PgUp │ END │     │
+          │     │     │     │     │     │       │HOME │PgDn │PgUp │ END │     │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │  ⇧  │  ⌃  │  ⌥  │  ⌘  │     │       │  ←  │  ↓  │  ↑  │  →  │     │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
@@ -65,7 +65,6 @@ Features:
                             └─────┴─────┘       └─────┴─────┘
 
 Features:
-  - Globe key (🌐): macOS globe key
   - Left hand: Modifier keys (Shift, Ctrl, Alt, GUI)
   - Right hand: Arrow keys and navigation (Home, End, PgUp, PgDn)
   - Cmd+C, Cmd+V for copy/paste
