@@ -59,15 +59,16 @@ Features:
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │  ⇧  │  ⌃  │  ⌥  │  ⌘  │     │       │  ←  │  ↓  │  ↑  │  →  │     │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-          │     │     │ ⌘C  │ ⌘V  │     │       │     │     │     │     │     │
+          │     │     │ ⌘C  │⌘V/⇪L│     │       │     │     │     │     │     │
           └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
                             │     │     │       │Enter│ Del │
                             └─────┴─────┘       └─────┴─────┘
 
 Features:
+  - Caps Lock on top-left corner (Q position)
   - Left hand: Modifier keys (Shift, Ctrl, Alt, GUI)
   - Right hand: Arrow keys and navigation (Home, End, PgUp, PgDn)
-  - Cmd+C, Cmd+V for copy/paste
+  - Copy/Paste: Cmd+C (tap C), Cmd+V (tap V, hold V for Caps Lock)
 
 
 #### LAYER 4: NUMBERS & FUNCTION KEYS
@@ -158,8 +159,11 @@ Mod-Tap Keys: Hold for modifier, tap for key
   - Right hand: J=GUI, K=Alt, L=Ctrl, ;=Shift
 
 Special Modifiers:
-  - Hyper (⌘+⌥+⌃+⇧): G and H keys
-  - Caps Lock: V and M keys (hold), also available on Navigation layer (Q position)
+  - Hyper (⌘+⌥+⌃+⇧): G and H keys (hold on base layer)
+  - Caps Lock:
+    - V and M keys (hold on base layer)
+    - Q position on Navigation layer (tap)
+    - V position on Navigation layer (hold - tap for paste)
   - Layer taps on thumb cluster for quick layer access
 
 Timing Configuration (optimized for fast typing):
