@@ -107,9 +107,9 @@
 			//┌─────────────────────┬──────────────┬──────────────┬──────────────┬──────────────┐   ┌──────────────┬──────────────┬──────────────┬──────────────┬─────────────────────┐
 			   &kp Q                 &kp W          &kp E          &kp R          &kp T              &kp Y          &kp U          &kp I          &kp O          &kp P
 			//├─────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼─────────────────────┤
-			   &hml LSHIFT A         &hml LCTRL S   &hml LALT D    &hml LGUI F    &kp G              &kp H          &hmr RGUI J    &hmr RALT K    &hmr RCTRL L   &hmr RSHIFT SEMI
+			   &hml LSHIFT A         &hml LCTRL S   &hml LALT D    &hml LGUI F    &hyp LC(LS(LA(LGUI))) G    &hyp LC(LS(LA(LGUI))) H    &hmr RGUI J    &hmr RALT K    &hmr RCTRL L   &hmr RSHIFT SEMI
 			//├─────────────────────┼──────────────┼──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┼──────────────┼─────────────────────┤
-		     &hyp LC(LS(LA(LGUI))) Z   &kp X      &kp C          &kp V          &kp B              &kp N          &kp M          &kp COMMA      &kp DOT        &hyp LC(LS(LA(LGUI))) FSLH
+		     &kp Z                     &kp X      &kp C          &kp V          &kp B              &kp N          &kp M          &kp COMMA      &kp DOT        &kp FSLH
 		  //└─────────────────────┴──────────────┴──────────────┼──────────────┼──────────────┤   ├──────────────┼──────────────┼──────────────┴──────────────┴─────────────────────┘
 		                                                         &lt_repeat SYM TAB    &lt_repeat NAV SPACE      &lt_repeat FUN RET    &lt_repeat NUM BSPC
 			//                                                    └──────────────┴──────────────┘   └──────────────┴──────────────┘
