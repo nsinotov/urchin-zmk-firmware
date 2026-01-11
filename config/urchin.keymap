@@ -95,6 +95,13 @@
 			bindings = <&kp ESC>;
 			layers = <BASE>;
 		};
+		// S+D -> ESC
+		combo_esc_sd {
+			timeout-ms = <50>;
+			key-positions = <11 12>;
+			bindings = <&kp ESC>;
+			layers = <BASE>;
+		};
 	};
 
 	keymap {
