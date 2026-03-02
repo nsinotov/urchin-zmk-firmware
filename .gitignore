@@ -1,0 +1,12 @@
+# Build artifacts
+firmware/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDEs and editors
+.vscode/
+.idea/
