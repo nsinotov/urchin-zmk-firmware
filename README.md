@@ -22,12 +22,12 @@ This is a fork of https://github.com/duckyb/urchin-zmk-firmware
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │ A/⇧ │ S/⌃ │ D/⌥ │ F/⌘ │ G/⇪ │       │ H/⇪ │ J/⌘ │ K/⌥ │ L/⌃ │ ;/⇧ │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-          │  Z  │  X  │  C  │ V/⇪L│  B  │       │  N  │ M/⇪L│  ,  │  .  │  /  │
+          │  Z  │  X  │  C  │  V  │  B  │       │  N  │  M  │  ,  │  .  │  /  │
           └─────┴─────┴─────┼─────┼─────┐       ┌─────┼─────┼─────┴─────┴─────┘
                             │Tab↓1│Spc↓3│       │Ent↓5│Bsp↓4│
                             └─────┴─────┘       └─────┴─────┘
 
-Legend: ⇧=Shift, ⌃=Control, ⌥=Alt/Option, ⌘=GUI/Command, ⇪=Hyper, ⇪L=Caps Lock
+Legend: ⇧=Shift, ⌃=Control, ⌥=Alt/Option, ⌘=GUI/Command, ⇪=Hyper
         ↓n = Layer tap to layer n
 
 
@@ -59,7 +59,7 @@ Features:
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │  ⇧  │  ⌃  │  ⌥  │  ⌘  │     │       │  ←  │  ↓  │  ↑  │  →  │     │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-          │     │     │ ⌘C  │⌘V/⇪L│     │       │     │     │     │     │     │
+          │     │     │ ⌘C  │ ⌘V  │     │       │     │     │     │     │     │
           └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
                             │     │     │       │Enter│ Del │
                             └─────┴─────┘       └─────┴─────┘
@@ -68,7 +68,7 @@ Features:
   - Caps Lock on top-left corner (Q position)
   - Left hand: Modifier keys (Shift, Ctrl, Alt, GUI)
   - Right hand: Arrow keys and navigation (Home, End, PgUp, PgDn)
-  - Copy/Paste: Cmd+C (tap C), Cmd+V (tap V, hold V for Caps Lock)
+  - Copy/Paste: Cmd+C (tap C), Cmd+V (tap V)
 
 
 #### LAYER 4: NUMBERS & FUNCTION KEYS
@@ -160,10 +160,7 @@ Mod-Tap Keys: Hold for modifier, tap for key
 
 Special Modifiers:
   - Hyper (⌘+⌥+⌃+⇧): G and H keys (hold on base layer)
-  - Caps Lock:
-    - V and M keys (hold on base layer)
-    - Q position on Navigation layer (tap)
-    - V position on Navigation layer (hold - tap for paste)
+  - Caps Lock: Q position on Navigation layer (tap)
   - Layer taps on thumb cluster for quick layer access
 
 Timing Configuration (optimized for fast typing):
