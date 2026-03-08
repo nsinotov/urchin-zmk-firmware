@@ -1,5 +1,12 @@
 # Build artifacts
 firmware/
+zmk/
+zephyr/
+modules/
+optional/
+
+# Local history
+.history/
 
 # macOS
 .DS_Store
@@ -10,3 +17,6 @@ firmware/
 # IDEs and editors
 .vscode/
 .idea/
+
+# Claude Code
+.claude/settings.local.json

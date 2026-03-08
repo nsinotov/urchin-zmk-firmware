@@ -27,7 +27,7 @@ Push changes to trigger a build; download artifacts from the Actions tab.
 
 ### Build details
 - **Build matrix**: defined in `build.yaml` (left half, right half, settings_reset)
-- **ZMK version**: v0.3.0 (pinned in `config/west.yml`)
+- **ZMK version**: main branch / Zephyr 4.1 (set in `config/west.yml`)
 - **External modules**: `duckyb/urchin-zmk-module` (shield definition), `M165437/nice-view-gem` (display, pinned to `7794ebf` for LVGL v8 compatibility)
 
 ## Key Files

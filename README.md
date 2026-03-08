@@ -208,6 +208,6 @@ Advantages:
 
 - **Keyboard**: Urchin - Split 3x5_2 (34 keys)
 - **Controller**: Nice!Nano v2
-- **Firmware**: ZMK (v0.3.0)
+- **Firmware**: ZMK (main branch, Zephyr 4.1)
 - **Original repo**: https://github.com/duckyb/urchin-zmk-firmware
 

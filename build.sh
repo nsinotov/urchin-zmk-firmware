@@ -43,27 +43,27 @@ build_target() {
 
 case "$TARGET" in
     left)
-        build_target "urchin_left" "nice_nano_v2" \
+        build_target "urchin_left" "nice_nano//zmk" \
             "urchin_left nice_view_adapter nice_view_gem" \
             "studio-rpc-usb-uart" \
             "-DCONFIG_ZMK_STUDIO=y"
         ;;
     right)
-        build_target "urchin_right" "nice_nano_v2" \
+        build_target "urchin_right" "nice_nano//zmk" \
             "urchin_right nice_view_adapter nice_view_gem"
         ;;
     reset)
-        build_target "settings_reset" "nice_nano_v2" \
+        build_target "settings_reset" "nice_nano//zmk" \
             "settings_reset"
         ;;
     all)
-        build_target "urchin_left" "nice_nano_v2" \
+        build_target "urchin_left" "nice_nano//zmk" \
             "urchin_left nice_view_adapter nice_view_gem" \
             "studio-rpc-usb-uart" \
             "-DCONFIG_ZMK_STUDIO=y"
-        build_target "urchin_right" "nice_nano_v2" \
+        build_target "urchin_right" "nice_nano//zmk" \
             "urchin_right nice_view_adapter nice_view_gem"
-        build_target "settings_reset" "nice_nano_v2" \
+        build_target "settings_reset" "nice_nano//zmk" \
             "settings_reset"
         ;;
     *)
