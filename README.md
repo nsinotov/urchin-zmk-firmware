@@ -20,11 +20,12 @@ This is a fork of https://github.com/duckyb/urchin-zmk-firmware
           ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
           │  Q  │  W  │  E  │  R  │  T  │       │  Y  │  U  │  I  │  O  │  P  │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-          │ A/⇧ │ S/⌃ │ D/⌥ │ F/⌘ │ G/⇪ │       │ H/⇪ │ J/⌘ │ K/⌥ │ L/⌃ │ ;/⇧ │
+          │ A/⌥ │ S/⌃ │ D/⌘ │ F/⇧ │ G/⇪ │       │ H/⇪ │ J/⇧ │ K/⌘ │ L/⌃ │ ;/⌥ │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │  Z  │  X  │  C  │  V  │  B  │       │  N  │  M  │  ,  │  .  │  /  │
           └─────┴─────┴─────┼─────┼─────┐       ┌─────┼─────┼─────┴─────┴─────┘
                             │Tab↓1│Spc↓3│       │Ent↓5│Bsp↓4│
+
                             └─────┴─────┘       └─────┴─────┘
 
 Legend: ⇧=Shift, ⌃=Control, ⌥=Alt/Option, ⌘=GUI/Command, ⇪=Hyper
@@ -36,7 +37,7 @@ Legend: ⇧=Shift, ⌃=Control, ⌥=Alt/Option, ⌘=GUI/Command, ⇪=Hyper
           ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
           │  !  │  @  │  #  │  $  │  %  │       │  ^  │  &  │  *  │  (  │  )  │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-          │ ./⇧ │ ,/⌃ │ "/⌥ │ '/⌘ │  |  │       │  -  │ =/⌘ │ `/⌥ │ {/⌃ │ }/⇧ │
+          │ ./⌥ │ ,/⌃ │ "/⌘ │ '/⇧ │  |  │       │  -  │ =/⇧ │ `/⌘ │ {/⌃ │ }/⌥ │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │  ?  │  /  │  <  │  >  │  \  │       │  _  │  +  │  ~  │  [  │  ]  │
           └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
@@ -57,18 +58,19 @@ Features:
           ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
           │CAPS │     │     │     │     │       │HOME │PgDn │PgUp │ END │     │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-          │  ⇧  │  ⌃  │  ⌥  │  ⌘  │     │       │  ←  │  ↓  │  ↑  │  →  │     │
+          │  ⌥  │  ⌃  │  ⌘  │  ⇧  │     │       │  ←  │  ↓  │  ↑  │  →  │     │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │     │     │ ⌘C  │ ⌘V  │     │       │     │     │     │     │     │
           └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
-                            │     │     │       │Enter│ Del │
+                            │     │     │       │ --- │ Del │
                             └─────┴─────┘       └─────┴─────┘
 
 Features:
   - Caps Lock on top-left corner (Q position)
-  - Left hand: Modifier keys (Shift, Ctrl, Alt, GUI)
+  - Left hand: Modifier keys (Alt, Ctrl, GUI, Shift)
   - Right hand: Arrow keys and navigation (Home, End, PgUp, PgDn)
-  - Copy/Paste: Cmd+C (tap C), Cmd+V (tap V)
+  - Copy/Paste: Cmd+C, Cmd+V (macros)
+  - Right inner thumb: transparent (enables NAV+MOUSE → FUN conditional layer)
 
 
 #### LAYER 4: NUMBERS & FUNCTION KEYS
@@ -76,7 +78,7 @@ Features:
           ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
           │ F1  │ F2  │ F3  │ F4  │ F5  │       │ F6  │ F7  │ F8  │ F9  │ F10 │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-          │ 1/⇧ │ 2/⌃ │ 3/⌥ │ 4/⌘ │  5  │       │  6  │ 7/⌘ │ 8/⌥ │ 9/⌃ │ 0/⇧ │
+          │ 1/⌥ │ 2/⌃ │ 3/⌘ │ 4/⇧ │  5  │       │  6  │ 7/⇧ │ 8/⌘ │ 9/⌃ │ 0/⌥ │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │ F11 │     │     │     │     │       │     │     │     │     │ F12 │
           └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
@@ -89,7 +91,31 @@ Features:
   - F11 and F12 on bottom corners
 
 
-#### LAYER 5: MEDIA & SYSTEM CONTROLS
+#### LAYER 5: MOUSE — Enter hold
+
+          ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
+          │     │     │     │     │     │       │     │     │  ↑  │     │     │
+          ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
+          │  ⌥  │  ⌃  │  ⌘  │  ⇧  │SCRL │       │     │  ←  │  ↓  │  →  │     │
+          ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
+          │     │     │     │     │     │       │     │     │     │     │     │
+          └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
+                            │RCLK │LCLK │       │     │     │
+                            └─────┴─────┘       └─────┴─────┘
+
+Features:
+  - Right hand: Mouse cursor movement (↑↓←→ via mmv keys)
+  - Left hand: Modifier keys for click+drag combos
+  - Thumb keys: Left/Right mouse click
+  - Hold G → SCROLL layer (mouse movement becomes scroll)
+
+
+#### LAYER 6: SCROLL — G hold on MOUSE layer
+
+All keys pass through to MOUSE layer. Mouse movement keys become scroll.
+
+
+#### LAYER 7: FUN (Media & System) — NAV + MOUSE held together
 
           ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
           │ BT0 │     │ |<< │ >>| │ >|| │       │ BT3 │     │     │Unsck│Reset│
@@ -102,6 +128,7 @@ Features:
                             └─────┴─────┘       └─────┴─────┘
 
 Features:
+  - Conditional layer: activated when both NAV and MOUSE are held
   - Bluetooth: BT0-BT5 profile selection, BT Clear
   - Media controls: Play/Pause, Previous, Next
   - Volume: Vol+, Vol-, Mute
@@ -125,7 +152,7 @@ The thumb keys use a custom `lt_repeat` behavior that enables **key repeat on la
 
 **How it works:**
 - **Single tap** → Sends the key once (Space, Tab, Enter, or Backspace)
-- **Hold** → Activates the layer (NAV, SYM, FUN, or NUM)
+- **Hold** → Activates the layer (NAV, SYM, MOUSE, or NUM)
 - **Quick double-tap + hold** → Key repeats continuously while held
 
 **Technical details:**
@@ -154,9 +181,9 @@ S + D  →  ESC
 ### MODIFIER KEY REFERENCE
 
 Mod-Tap Keys: Hold for modifier, tap for key
-  - Home row mods provide ergonomic access to Shift, Ctrl, Alt, GUI
-  - Left hand: A=Shift, S=Ctrl, D=Alt, F=GUI
-  - Right hand: J=GUI, K=Alt, L=Ctrl, ;=Shift
+  - Home row mods provide ergonomic access to Alt, Ctrl, GUI, Shift (ACGS order)
+  - Left hand: A=Alt, S=Ctrl, D=GUI, F=Shift
+  - Right hand: J=Shift, K=GUI, L=Ctrl, ;=Alt
 
 Special Modifiers:
   - Hyper (⌘+⌥+⌃+⇧): G and H keys (hold on base layer)
@@ -165,9 +192,9 @@ Special Modifiers:
 
 Timing Configuration (optimized for fast typing):
   - Tapping Term: 220ms (home row), 200ms (thumb keys with lt_repeat)
-  - Quick Tap: 250ms (home row), 200ms (thumb keys for key repeat)
-  - Permissive Hold: Home row mods only
-  - Per-key configuration for better balance
+  - Quick Tap: 150ms (home row), 200ms (thumb keys for key repeat)
+  - Balanced flavor with positional hold-trigger
+  - Require-prior-idle: 200ms (non-shift), 125ms (shift, for eager activation)
   - Thumb keys support key repeat via lt_repeat behavior (see above)
 
 
@@ -178,8 +205,10 @@ Timing Configuration (optimized for fast typing):
 From BASE layer:
   - Hold Tab     → Layer 1 (Symbols)
   - Hold Space   → Layer 3 (Navigation)
-  - Hold Enter   → Layer 5 (Media/System)
+  - Hold Enter   → Layer 5 (Mouse)
   - Hold Bksp    → Layer 4 (Numbers/F-keys)
+  - Hold G on Mouse → Layer 6 (Scroll)
+  - Hold Space + Enter → Layer 7 (FUN/Media — conditional)
 
 Note: Layer 2 is intentionally empty due to firmware bug (key position 2 on 
       layer index 2 causes keyboard disconnect)

@@ -43,24 +43,25 @@ Push changes to trigger a build; download artifacts from the Actions tab.
 
 ## Keymap Architecture (`config/urchin.keymap`)
 
-**6 layers**: BASE (0), SYM (1), EMP (2, intentionally empty), NAV (3), NUM (4), FUN (5).
+**8 layers**: BASE (0), SYM (1), EMP (2, intentionally empty), NAV (3), NUM (4), MOUSE (5), SCROLL (6), FUN (7).
 
 Layer 2 is empty as a workaround — ZMK has a bug where layer index 2 + key position 2 causes a keyboard disconnect.
 
 **Layer access** (all via thumb keys):
-- Hold Tab → SYM | Hold Space → NAV | Hold Backspace → NUM | Hold Enter → FUN
+- Hold Tab → SYM | Hold Space → NAV | Hold Backspace → NUM | Hold Enter → MOUSE
+- FUN is a conditional layer — activated when both NAV and MOUSE are held
 
-**Home row mods** (balanced flavor, 220ms tapping-term):
-- Left: A=Shift, S=Ctrl, D=Alt, F=GUI
-- Right: J=GUI, K=Alt, L=Ctrl, ;=Shift
+**Home row mods** (ACGS order, balanced flavor, 220ms tapping-term):
+- Left: A=Alt, S=Ctrl, D=GUI, F=Shift, G=Hyper
+- Right: H=Hyper, J=Shift, K=GUI, L=Ctrl, ;=Alt
 
 **Custom behaviors defined in the keymap**:
-- `hm` — home row mod (balanced hold-tap with positional hold)
+- `hml`/`hmr` — positional home row mods (balanced hold-tap, 200ms require-prior-idle for non-shift, 125ms for shift)
 - `lt_repeat` — layer-tap that outputs key-repeat on quick double-tap (200ms tapping-term)
-- `ht_paste_caps` — macro: Cmd+V on tap, Caps Lock on hold
-- Hyper key (⌘+⌥+⌃+⇧) on G and H positions
+- `hyp` — Hyper key (⌘+⌥+⌃+⇧) on G and H positions, triggers on both hands
+- Mouse keys (`&mmv`/`&msc`) with custom speeds on MOUSE and SCROLL layers
 
-**Combos**: `K+L` → ESC, `S+D` → ESC
+**Combos**: `K+L` → ESC (BASE), `S+D` → ESC (BASE, MOUSE)
 
 ## ZMK Conventions
 
@@ -73,4 +74,4 @@ Layer 2 is empty as a workaround — ZMK has a bug where layer index 2 + key pos
 ## Known Issues
 
 - **Layer 2 bug**: Do not assign meaningful bindings to layer index 2 at key position 2 — causes disconnect
-- **Debouncing disabled** in `urchin.conf` (intentional, for lower latency)
+- **Debouncing** uses ZMK defaults (eager debouncing lines commented out in `urchin.conf`)
