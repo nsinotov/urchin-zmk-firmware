@@ -51,9 +51,9 @@ Layer 2 is empty as a workaround — ZMK has a bug where layer index 2 + key pos
 - Hold Tab → SYM | Hold Space → NAV | Hold Backspace → NUM | Hold Enter → MOUSE
 - FUN is a conditional layer — activated when both NAV and MOUSE are held
 
-**Home row mods** (ACGS order, balanced flavor, 220ms tapping-term):
-- Left: A=Alt, S=Ctrl, D=GUI, F=Shift, G=Hyper
-- Right: H=Hyper, J=Shift, K=GUI, L=Ctrl, ;=Alt
+**Home row mods** (ACSG order, balanced flavor, 220ms tapping-term):
+- Left: A=Alt, S=Ctrl, D=Shift, F=GUI, G=Hyper
+- Right: H=Hyper, J=GUI, K=Shift, L=Ctrl, ;=Alt
 
 **Custom behaviors defined in the keymap**:
 - `hml`/`hmr` — positional home row mods (balanced hold-tap, 200ms require-prior-idle for non-shift, 125ms for shift)

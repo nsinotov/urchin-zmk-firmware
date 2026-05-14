@@ -20,7 +20,7 @@ This is a fork of https://github.com/duckyb/urchin-zmk-firmware
           ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
           │  Q  │  W  │  E  │  R  │  T  │       │  Y  │  U  │  I  │  O  │  P  │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
-          │ A/⌥ │ S/⌃ │ D/⌘ │ F/⇧ │ G/⇪ │       │ H/⇪ │ J/⇧ │ K/⌘ │ L/⌃ │ ;/⌥ │
+          │ A/⌥ │ S/⌃ │ D/⇧ │ F/⌘ │ G/⇪ │       │ H/⇪ │ J/⌘ │ K/⇧ │ L/⌃ │ ;/⌥ │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │  Z  │  X  │  C  │  V  │  B  │       │  N  │  M  │  ,  │  .  │  /  │
           └─────┴─────┴─────┼─────┼─────┐       ┌─────┼─────┼─────┴─────┴─────┘
@@ -181,9 +181,9 @@ S + D  →  ESC
 ### MODIFIER KEY REFERENCE
 
 Mod-Tap Keys: Hold for modifier, tap for key
-  - Home row mods provide ergonomic access to Alt, Ctrl, GUI, Shift (ACGS order)
-  - Left hand: A=Alt, S=Ctrl, D=GUI, F=Shift
-  - Right hand: J=Shift, K=GUI, L=Ctrl, ;=Alt
+  - Home row mods provide ergonomic access to Alt, Ctrl, Shift, GUI (ACSG order)
+  - Left hand: A=Alt, S=Ctrl, D=Shift, F=GUI
+  - Right hand: J=GUI, K=Shift, L=Ctrl, ;=Alt
 
 Special Modifiers:
   - Hyper (⌘+⌥+⌃+⇧): G and H keys (hold on base layer)
