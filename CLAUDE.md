@@ -60,6 +60,11 @@ Layer 2 is empty as a workaround — ZMK has a bug where layer index 2 + key pos
 - `lt_repeat` — layer-tap that outputs key-repeat on quick double-tap (200ms tapping-term)
 - `hyp` — Hyper key (⌘+⌥+⌃+⇧) on G and H positions, triggers on both hands
 - Mouse keys (`&mmv`/`&msc`) with custom speeds on MOUSE and SCROLL layers
+- `&caps_word` — built-in ZMK behavior on NAV layer (R position), types UPPER_CASE until a non-word key is pressed
+
+**NAV layer top row**: E=Caps Lock, R=Caps Word
+
+**Thumb keys on overlay layers**: SYM and NUM thumb keys are `&none` (disabled); NAV right outer thumb has Del; MOUSE is unchanged.
 
 **Combos**: `K+L` → ESC (BASE), `S+D` → ESC (BASE, MOUSE)
 

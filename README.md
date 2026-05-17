@@ -41,13 +41,14 @@ Legend: ⇧=Shift, ⌃=Control, ⌥=Alt/Option, ⌘=GUI/Command, ⇪=Hyper
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │  ?  │  /  │  <  │  >  │  \  │       │  _  │  +  │  ~  │  [  │  ]  │
           └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
-                            │     │     │       │Enter│ Del │
+                            │     │     │       │     │     │
                             └─────┴─────┘       └─────┴─────┘
 
 Features:
   - Top row: Common symbols (!@#$%^&*())
   - Home row: Punctuation and brackets with mod-tap
   - Bottom row: Special characters and quotes
+  - Thumb keys disabled (base layer handles them)
 
 
 #### LAYER 2: EMPTY
@@ -56,7 +57,7 @@ Features:
 #### LAYER 3: NAVIGATION & EDITING
 
           ┌─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┐
-          │CAPS │     │     │     │     │       │HOME │PgDn │PgUp │ END │     │
+          │     │     │CAPS │ CW  │     │       │HOME │PgDn │PgUp │ END │     │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │  ⌥  │  ⌃  │  ⌘  │  ⇧  │     │       │  ←  │  ↓  │  ↑  │  →  │     │
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
@@ -66,11 +67,13 @@ Features:
                             └─────┴─────┘       └─────┴─────┘
 
 Features:
-  - Caps Lock on top-left corner (Q position)
+  - Caps Lock on E position, Caps Word on R position
   - Left hand: Modifier keys (Alt, Ctrl, GUI, Shift)
   - Right hand: Arrow keys and navigation (Home, End, PgUp, PgDn)
   - Copy/Paste: Cmd+C, Cmd+V (macros)
   - Right inner thumb: transparent (enables NAV+MOUSE → FUN conditional layer)
+
+Legend: CW = Caps Word (types in UPPER_CASE until a non-word key is pressed)
 
 
 #### LAYER 4: NUMBERS & FUNCTION KEYS
@@ -82,13 +85,14 @@ Features:
           ├─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┤
           │ F11 │     │     │     │     │       │     │     │     │     │ F12 │
           └─────┴─────┴─────┼─────┼─────┤       ├─────┼─────┼─────┴─────┴─────┘
-                            │ Tab │Space│       │     │     │
+                            │     │     │       │     │     │
                             └─────┴─────┘       └─────┴─────┘
 
 Features:
   - Top row: Function keys F1-F10
   - Home row: Numbers 1-0 with mod-tap for quick access
   - F11 and F12 on bottom corners
+  - Thumb keys disabled (base layer handles them)
 
 
 #### LAYER 5: MOUSE — Enter hold
@@ -187,7 +191,8 @@ Mod-Tap Keys: Hold for modifier, tap for key
 
 Special Modifiers:
   - Hyper (⌘+⌥+⌃+⇧): G and H keys (hold on base layer)
-  - Caps Lock: Q position on Navigation layer (tap)
+  - Caps Lock: E position on Navigation layer (tap)
+  - Caps Word: R position on Navigation layer (tap, types UPPER_CASE until non-word key)
   - Layer taps on thumb cluster for quick layer access
 
 Timing Configuration (optimized for fast typing):
